@@ -1,0 +1,104 @@
+
+
+import 'package:flutter/material.dart';
+
+class LoginPage extends StatelessWidget {
+  const LoginPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Color.fromARGB(255, 255, 255, 255),
+      //appbar
+      appBar: AppBar(
+        leading:Icon(
+          Icons.home,
+        ),
+        title: Text("CARTEL",
+        style: TextStyle(fontSize:19),),
+        centerTitle: true,
+        actions: const [
+          Icon(Icons.search)
+        ],
+      ),
+      //username textfield
+      body: Padding(
+        padding: const EdgeInsets.all(15.0),
+        child: Center(
+          child: SingleChildScrollView(
+          child: Column(
+            children: [
+                SizedBox(height: 100),
+           
+              TextField(
+                
+                textAlign: TextAlign.center,
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(50),
+                  ),
+                  labelText: "USER NAME",
+
+                  
+                ),
+
+              ),
+              SizedBox(height: 20),
+              //password textfield 
+              TextField(
+                textAlign: TextAlign.center,
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(50),
+                  ),
+                  labelText: "PASSWORD"
+                ),
+              ),
+        //sign in button
+        SizedBox(height: 20),
+        ElevatedButton(
+            style: ButtonStyle(
+              backgroundColor: MaterialStateProperty.all(Colors.red),
+
+            ),
+          onPressed: (){}, child: Text("SIGN IN")),
+        //signup button
+//         Row(
+//   mainAxisAlignment: MainAxisAlignment.center, 
+//   children: [
+//     //sign up button
+//     TextButton(
+//       onPressed: () {},
+//       child: Text("SignUp"),
+//     ),
+//     //btn seperation
+//     Text(
+//       "/",
+//       style: TextStyle(fontSize: 20), 
+//          ),
+//          //forgot password button
+//     TextButton(
+//       onPressed: () {},
+//       child: Text("Forgot password"),
+//     ),
+//   ],
+// )
+  //
+
+            ],    
+          ),
+
+          //forgot password / signup 
+        
+
+
+          
+            
+
+        ),
+        ),
+      ),
+       
+    );
+  }
+}
