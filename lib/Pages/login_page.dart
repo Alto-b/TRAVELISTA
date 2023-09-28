@@ -41,7 +41,7 @@ class LoginPage extends StatelessWidget {
            //username textfield
               TextField(
                 controller: _usernameController,
-                textAlign: TextAlign.center,
+                // textAlign: TextAlign.center,
                 decoration: InputDecoration(
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(50),
@@ -62,7 +62,7 @@ class LoginPage extends StatelessWidget {
               TextField(
                 controller: _passwordController,
                 obscureText: true,
-                textAlign: TextAlign.center,
+                // textAlign: TextAlign.center,
                 decoration: InputDecoration(
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(50),
