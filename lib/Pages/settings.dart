@@ -9,6 +9,7 @@ class Settings extends StatelessWidget {
 
 appBar: AppBar(
   title: Text("Settings"),
+  backgroundColor:Color.fromRGBO(96, 125, 139, 1),
 
 ),
       body: ListView(

@@ -10,13 +10,14 @@ class Profile extends StatelessWidget {
           backgroundColor:Color.fromRGBO(96, 125, 139, 1),
           title:Text('Profile')
         ),
+        backgroundColor: Color.fromARGB(255, 227, 225, 225),
 
         body: Center(
           child: Padding(
             padding: const EdgeInsets.all(50.0),
             child: Column(
               children: [
-                Image.asset('assets/img/profile1.webp'),
+                CircleAvatar(backgroundImage: AssetImage('assets/img/profile1.webp',),radius: 100,backgroundColor: Colors.yellow,),
                 SizedBox(height: 20,),
                 Text("Name : Alto B Puthethu",
                 style: TextStyle(
