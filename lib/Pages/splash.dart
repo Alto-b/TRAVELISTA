@@ -24,10 +24,55 @@ class _SplashState extends State<Splash> {
   // ignore: annotate_overrides
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
 
       body:Center(
         //child: Image.asset('assets/img/duck.gif'),
-        child: Text("loading...."),
+        //child: Text("loading...."),
+
+        //circular loading start
+        // child: Column(
+        //   mainAxisAlignment: MainAxisAlignment.center,
+        //   children: [
+        //         CircularProgressIndicator(),
+        //         Padding(padding: EdgeInsets.all(20.0),
+        //         child: Text("You are about to get amused"),),
+                
+        //   ],
+        // ),
+        //circular loading end
+
+        // gif duck start
+
+      //  child: Image.network(
+      //       'https://media.tenor.com/7zKZuIk31GEAAAAM/bird-dance.gif',
+      //       width: 100, 
+      //       height: 100, 
+      //     ),
+
+        // gif duck end
+
+        // gif car start
+
+      //  child: Image.network(
+      //       'https://cdn.dribbble.com/users/722246/screenshots/4400319/media/8854b69f794471a100c85577859e9c5e.gif',
+      //       width: 500, 
+      //       height: 500, 
+      //     ),
+
+        // gif car end
+
+        // animated start
+
+           child: Image.network(
+            'https://cdn.dribbble.com/users/722246/screenshots/4400319/media/8854b69f794471a100c85577859e9c5e.gif',
+            width: 500, 
+            height: 500, 
+          ),
+
+
+        // animated end
+
       )
     );
 
@@ -35,7 +80,7 @@ class _SplashState extends State<Splash> {
   }
 
   Future<void> gotoLogin() async{
-    await Future.delayed(Duration(seconds: 2));
+    await Future.delayed(Duration(seconds: 3));
     Navigator.of(context).pushReplacement( MaterialPageRoute(builder:(ctx)=>LoginPage()));
   }
 

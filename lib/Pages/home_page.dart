@@ -22,6 +22,12 @@ class _HomePageState extends State<HomePage> {
   var saveClr2=Color.fromARGB(255, 11, 11, 11);
   var thumbClr3=Colors.black;
   var saveClr3=Color.fromARGB(255, 11, 11, 11);
+  var thumbClr4=Colors.black;
+  var saveClr4=Color.fromARGB(255, 11, 11, 11);
+  var thumbClr5=Colors.black;
+  var saveClr5=Color.fromARGB(255, 11, 11, 11);
+  var thumbClr6=Colors.black;
+  var saveClr6=Color.fromARGB(255, 11, 11, 11);
   
   //function1
   void changeClr1(){
@@ -87,6 +93,75 @@ setState(() {
       }
       else{
         saveClr3=Colors.black;
+      }
+    });
+  }
+
+  //function4
+
+  void changeClr4(){
+    setState(() {
+      if(thumbClr4==Colors.black){
+          thumbClr4=Colors.blue;
+      }
+      else{
+        thumbClr4=Colors.black;
+      }
+    });
+  }
+  void changeSClr4(){
+setState(() {
+      if(saveClr4==Colors.black){
+          saveClr4=Color.fromARGB(255, 62, 237, 4);
+      }
+      else{
+        saveClr4=Colors.black;
+      }
+    });
+  }
+
+  //function5
+
+  void changeClr5(){
+    setState(() {
+      if(thumbClr5==Colors.black){
+          thumbClr5=Colors.blue;
+      }
+      else{
+        thumbClr5=Colors.black;
+      }
+    });
+  }
+  void changeSClr5(){
+setState(() {
+      if(saveClr5==Colors.black){
+          saveClr5=Color.fromARGB(255, 62, 237, 4);
+      }
+      else{
+        saveClr5=Colors.black;
+      }
+    });
+  }
+
+  //function6
+
+  void changeClr6(){
+    setState(() {
+      if(thumbClr6==Colors.black){
+          thumbClr6=Colors.blue;
+      }
+      else{
+        thumbClr6=Colors.black;
+      }
+    });
+  }
+  void changeSClr6(){
+setState(() {
+      if(saveClr6==Colors.black){
+          saveClr6=Color.fromARGB(255, 62, 237, 4);
+      }
+      else{
+        saveClr6=Colors.black;
       }
     });
   }
@@ -320,15 +395,126 @@ setState(() {
                           }, icon: Icon(Icons.save_alt_outlined),color: saveClr3,),
                     ],
                   )
-
-
             ],
             ),
-            
-            
           ),
+        ),
+
+        //CARD 4
+
+        Card(
+          elevation: 10,
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Column(children: [
+              ListTile(
+                leading: CircleAvatar(
+                  backgroundImage:AssetImage('assets/img/profile4.jpg',)),
+                  trailing: IconButton(onPressed: (){},
+                   icon:Icon(Icons.more_vert)),
+                  
+                title: Text("Glitch"),
+                subtitle: Text("1hr ago"),
+              ),
+              ListTile(
+                title: Text("Such an absolute track machine",),
+              ),
+              Image.asset('assets/img/Porsche-911-GT3-RS.webp',),
 
           
+           
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      IconButton(onPressed: () {
+                        changeClr4();
+                      }, icon: Icon(Icons.thumb_up,),color: thumbClr4,),
+                      IconButton( onPressed: () {
+                            changeSClr4();
+                          }, icon: Icon(Icons.save_alt_outlined),color: saveClr4,),
+                    ],
+                  )
+            ],
+            ),
+          ),
+        ),
+
+        //CARD 5
+
+        Card(
+          elevation: 10,
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Column(children: [
+              ListTile(
+                leading: CircleAvatar(
+                  backgroundImage:AssetImage('assets/img/DISKORT_PROFILE22.png',)),
+                  trailing: IconButton(onPressed: (){},
+                   icon:Icon(Icons.more_vert)),
+                  
+                title: Text("pANT43R"),
+                subtitle: Text("1hr ago"),
+              ),
+              ListTile(
+                title: Text("My new work",),
+              ),
+              Image.asset('assets/img/PAPIBAL.png',),
+
+          
+           
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      IconButton(onPressed: () {
+                        changeClr5();
+                      }, icon: Icon(Icons.thumb_up,),color: thumbClr5,),
+                      IconButton( onPressed: () {
+                            changeSClr5();
+                          }, icon: Icon(Icons.save_alt_outlined),color: saveClr5,),
+                    ],
+                  )
+            ],
+            ),
+          ),
+        ),
+
+         //CARD 6
+
+        Card(
+          elevation: 10,
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Column(children: [
+              ListTile(
+                leading: CircleAvatar(
+                  backgroundImage:AssetImage('assets/img/profile5.webp',)),
+                  trailing: IconButton(onPressed: (){},
+                   icon:Icon(Icons.more_vert)),
+                  
+                title: Text("Kannan"),
+                subtitle: Text("2hr ago"),
+              ),
+              ListTile(
+                title: Text("New logo loading ",),
+              ),
+              Image.asset('assets/img/kannan.jpg',),
+
+          
+           
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      IconButton(onPressed: () {
+                        changeClr6();
+                      }, icon: Icon(Icons.thumb_up,),color: thumbClr6,),
+                      IconButton( onPressed: () {
+                            changeSClr6();
+                          }, icon: Icon(Icons.save_alt_outlined),color: saveClr6,),
+                    ],
+                  )
+            ],
+            ),
+          ),
         ),
 
       ],

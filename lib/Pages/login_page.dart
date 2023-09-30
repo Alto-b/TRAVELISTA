@@ -1,3 +1,5 @@
+// ignore_for_file: no_leading_underscores_for_local_identifiers
+
 import 'package:cartel/Pages/home_page.dart';
 import 'package:cartel/main.dart';
 import 'package:flutter/material.dart';
@@ -36,8 +38,15 @@ class LoginPage extends StatelessWidget {
             children: [
               //Image.asset('assets/img/duck.gif',height: 100,),
             Image.asset('assets/img/headerlogo.png',height: 100,),
-                SizedBox(height: 70),
-                
+                SizedBox(height: 50),
+                //gif start
+          //       Image.network(
+          //   'https://cdn.dribbble.com/users/722246/screenshots/4400319/media/8854b69f794471a100c85577859e9c5e.gif',
+          //   width: 100, 
+          //   height: 100, 
+          // ),
+          //  SizedBox(height: 20),
+         // gif end
            //username textfield
               TextField(
                 controller: _usernameController,
@@ -173,11 +182,12 @@ class LoginPage extends StatelessWidget {
     final _username = _usernameController.text;
     final _password = _passwordController.text;
 
-  if(_username == "" && _password==""){
+  if(_username == "alto" && _password=="123"){
     //home
    final _sharedPrefs= await SharedPreferences.getInstance();
    await _sharedPrefs.setBool(SAVE_KEY_NAME, true);
 
+    // ignore: use_build_context_synchronously
     Navigator.of(ctx).pushReplacement(MaterialPageRoute(builder: (ctx)=>HomePage()));
   }
   else{
