@@ -3,6 +3,7 @@
 import 'package:cartel/Pages/home_page.dart';
 import 'package:cartel/main.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class LoginPage extends StatelessWidget {
@@ -58,8 +59,8 @@ class LoginPage extends StatelessWidget {
                   ),labelStyle:TextStyle(
                     fontSize: 15,
                   ),prefixIcon: Icon(Icons.person),
-                  labelText: "Username",
-
+                  labelText: "Username",floatingLabelStyle: GoogleFonts.orbitron(),
+                  
                   
                 ),
 
@@ -79,7 +80,7 @@ class LoginPage extends StatelessWidget {
                   labelStyle:TextStyle(
                     fontSize: 15,
                   ),prefixIcon: Icon(Icons.key),
-                  labelText: "Password",
+                  labelText: "Password",floatingLabelStyle: GoogleFonts.orbitron(),
 
                 ),
               ),
@@ -188,7 +189,7 @@ class LoginPage extends StatelessWidget {
    await _sharedPrefs.setBool(SAVE_KEY_NAME, true);
 
     // ignore: use_build_context_synchronously
-    Navigator.of(ctx).pushReplacement(MaterialPageRoute(builder: (ctx)=>HomePage()));
+    Navigator.of(ctx).pushReplacement(MaterialPageRoute(builder: (ctx)=>HomePage())) ;
   }
   else{
     const errorMesasage='Incorrect username or password';

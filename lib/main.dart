@@ -2,6 +2,7 @@ import 'package:cartel/Pages/splash.dart';
 import 'package:flutter/material.dart';
 
 
+// ignore: constant_identifier_names
 const SAVE_KEY_NAME ="UserLoggedIn";
 void main(){
   runApp(const MyApp());
