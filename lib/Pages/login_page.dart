@@ -34,7 +34,7 @@ class LoginPage extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.all(30.0),
         child: Center(
-          child: SingleChildScrollView(
+          child: SingleChildScrollView( 
           child: Column(
             children: [
               //Image.asset('assets/img/duck.gif',height: 100,),
@@ -86,16 +86,19 @@ class LoginPage extends StatelessWidget {
               ),
         //sign in button
         SizedBox(height: 20),
-        ElevatedButton(
-            style: ButtonStyle(elevation: MaterialStateProperty.all(6),
-              backgroundColor: MaterialStateProperty.all(Color.fromARGB(255, 65, 65, 67)),
-              
-              
-
-            ),
-          onPressed: (){
-            checkLogin(context);
-          }, child: Text("SIGN IN")),
+        Align(
+          alignment: Alignment.centerRight,
+          child: ElevatedButton(
+              style: ButtonStyle(elevation: MaterialStateProperty.all(6),
+                backgroundColor: MaterialStateProperty.all(Color.fromARGB(255, 65, 65, 67)),
+                
+                
+        
+              ),
+            onPressed: (){
+              checkLogin(context);
+            }, child: Text("SIGN IN")),
+        ),
 
           //alternative sign in
           SizedBox(height: 20),

@@ -1,4 +1,4 @@
-// ignore_for_file: use_build_context_synchronously
+// ignore_for_file: use_build_context_synchronously, no_leading_underscores_for_local_identifiers
 
 import 'package:cartel/Pages/home_page.dart';
 import 'package:cartel/Pages/login_page.dart';
@@ -27,42 +27,7 @@ class _SplashState extends State<Splash> {
       backgroundColor: Colors.white,
 
       body:Center(
-        //child: Image.asset('assets/img/duck.gif'),
-        //child: Text("loading...."),
-
-        //circular loading start
-        // child: Column(
-        //   mainAxisAlignment: MainAxisAlignment.center,
-        //   children: [
-        //         CircularProgressIndicator(),
-        //         Padding(padding: EdgeInsets.all(20.0),
-        //         child: Text("You are about to get amused"),),
-                
-        //   ],
-        // ),
-        //circular loading end
-
-        // gif duck start
-
-      //  child: Image.network(
-      //       'https://media.tenor.com/7zKZuIk31GEAAAAM/bird-dance.gif',
-      //       width: 100, 
-      //       height: 100, 
-      //     ),
-
-        // gif duck end
-
-        // gif car start
-
-      //  child: Image.network(
-      //       'https://cdn.dribbble.com/users/722246/screenshots/4400319/media/8854b69f794471a100c85577859e9c5e.gif',
-      //       width: 500, 
-      //       height: 500, 
-      //     ),
-
-        // gif car end
-
-        // animated start
+         // animated start
 
            child: Image.network(
             'https://cdn.dribbble.com/users/722246/screenshots/4400319/media/8854b69f794471a100c85577859e9c5e.gif',
