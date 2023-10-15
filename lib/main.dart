@@ -1,4 +1,4 @@
-import 'package:cartel/Pages/splash.dart';
+import 'package:travelista/Pages/splash.dart';
 import 'package:flutter/material.dart';
 
 

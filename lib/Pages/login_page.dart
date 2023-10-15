@@ -1,7 +1,7 @@
 // ignore_for_file: no_leading_underscores_for_local_identifiers
 
-import 'package:cartel/Pages/home_page.dart';
-import 'package:cartel/main.dart';
+import 'package:travelista/Pages/home_page.dart';
+import 'package:travelista/main.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -23,7 +23,7 @@ class LoginPage extends StatelessWidget {
       //   leading:Icon(
       //     Icons.home,
       //   ),
-      //   title: Text("CARTEL",
+      //   title: Text("travelista",
       //   style: TextStyle(fontSize:19),),
       //   centerTitle: true,
       //   actions: const [
